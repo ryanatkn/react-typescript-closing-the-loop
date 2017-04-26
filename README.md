@@ -28,9 +28,9 @@ starting with some state, then building the views from that data,
 then reacting to user input events on the views,
 which triggers business logic to update the state,
 then re-drawing the views with the new state, and continuing on in a loop.
-There's more to it, but this is the basic loop -
+There's more to it, but this is the basic loop:
 ```
-`state` -> `view` -> `user input` -> `business logic` -> `new state` -> `new view`, and so on.
+  state -> view -> user input -> business logic -> new state -> new view -> ...
 ```
 
 ## What is a "closed" loop?
@@ -63,7 +63,7 @@ In a closed loop, the compiler has your back - all of it.
 > the point of this post still stands.
 > Don't let perfect be the enemy of good, let alone great!
 > Be sure to check out TypeScript's optional compiler flags that increase type strictness,
-> like "noImplicitAny", "strictNullChecks".
+> like "noImplicitAny" and "strictNullChecks".
 > The experienced TypeScript developer will likely find and prefer
 > patterns that work well with its type system,
 > while keeping in mind that type-induced design damage could be a thing.
@@ -117,17 +117,17 @@ Let's look at some popular frameworks and their loops with TypeScript.
 Angular 2+, Vue, and Ember have two broken steps in the loop.
 To see what this actually means in practice, skip down to the last of the images below.
 ```
-  `state` -/-> `view` -/-> `user input` ---> `business logic` ---> `state`
+  state -/-> view -/-> user input ---> business logic ---> state
 ```
 
 Cycle gets closer, but it prefers CSS selector strings for attaching user input handlers to the view:
 ```
-  `state` ---> `view` -/-> `user input` ---> `business logic` ---> `state`
+  state ---> view -/-> user input ---> business logic ---> state
 ```
 
 React is a closed loop - no broken steps!
 ```
-  `state` ---> `view` ---> `user input` ---> `business logic` ---> `state`
+  state ---> view ---> user input ---> business logic ---> state
 ```
 
 Elm, PureScript, and some other languages with advanced type systems
