@@ -23,8 +23,8 @@ There are a lot of
 that explain unidirectional data flow,
 and some basic understanding is important for the rest of this post.
 The gist is that it describes how data can flow through
-a client application in a circular one-way loop
-- starting with some state, then building the views from that data,
+a client application in a circular one-way loop -
+starting with some state, then building the views from that data,
 then reacting to user input events on the views,
 which triggers business logic to update the state,
 then re-drawing the views with the new state, and continuing on in a loop.
@@ -44,9 +44,9 @@ meaning *all* type errors will be caught by the compiler *throughout the loop*.
 
 The benefits of having a well-typed *closed loop*
 go far beyond disambiguating strings and numbers.
-A closed loop means all of the symbols in your app
-- every reference to each variable, function, and piece of data
-- has a type and set of relationships that the compiler understands.
+A closed loop means all of the symbols in your app -
+every reference to each variable, function, and piece of data -
+has a type and set of relationships that the compiler understands.
 A fully closed loop makes it *impossible* for typos, missed refactorings,
 and all other mechanical errors to slip through unnoticed.
 In a closed loop, the compiler has your back - all of it.
@@ -80,8 +80,8 @@ The computer can only do these things with confidence when it has complete type 
 Any broken steps in the loop will cause things to fall through the cracks,
 meaning you cannot rely on the automated information and transformations
 the computer provides you with.
-Say you ask the computer to rename a variable
-- if your views do not close the loop, you'll have to search all of your views and
+Say you ask the computer to rename a variable -
+if your views do not close the loop, you'll have to search all of your views and
 update the variable name without the computer's guarantee of correctness.
 This is tedious and error prone - consider renaming a variable named "text" in a huge app!
 If there can always be leaks and misses, you have to check everything manually,
@@ -186,8 +186,8 @@ If you're already transpiling your JavaScript, like with Babel,
 it's a modest additional cost to adopt a gradual typing technology like TypeScript or Flow.
 Hopefully I've convinced you to try a typed language that compiles to JS if you haven't already!
 
-This post is from a programmer's perspective
-- designers and others may have different priorities.
+This post is from a programmer's perspective -
+designers and others may have different priorities.
 My primary concerns are code maintenance, correctness, and comprehension,
 all of which contribute directly to productivity,
 particularly when working on a team or on a long-lived project.
@@ -212,8 +212,8 @@ increasingly so in the past several years of tool evolution,
 and TypeScript was a natural next step.
 (JSLint -> JSHint -> ESLint -> TypeScript + TSLint + ESLint... fatigued?
 nope, energized! these tools have saved me a lot of time)
-I was already transpiling my code from commonjs modules and ES6 syntax
-- at that point, the cost of adopting TypeScript was quite small
+I was already transpiling my code from commonjs modules and ES6 syntax -
+at that point, the cost of adopting TypeScript was quite small
 (change the file extension, pop in the compiler),
 and the benefits have been tremendous.
 Thank you, Microsoft and the TypeScript team,
