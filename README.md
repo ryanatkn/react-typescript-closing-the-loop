@@ -95,6 +95,13 @@ which leads to happier developers, happier users, and better business outcomes.
 > I'll speculate that many developers think TypeScript adds rigidity to your code.
 > I think it's the opposite - JavaScript code is more rigid, and TypeScript more fluid,
 > because it's so easy and quick to refactor TypeScript.
+> However it is true that TypeScript can lead you to constrain your APIs,
+> contrary to the philosophies taken by libraries like jQuery.
+> The TypeScript team has done an outstanding job designing the type system
+> to fit the semantics and patterns of JavaScript,
+> and although it cannot model every JS library's API,
+> in practice I rarely feel limited,
+> and I've found that I prefer explicit contracts over functions that magically take any input.
 
 
 ## Closing the loop in practice
