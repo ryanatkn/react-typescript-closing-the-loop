@@ -1,0 +1,32 @@
+{
+  "name": "react-typescript-closing-the-loop",
+  "version": "1.0.0",
+  "description": "Closing the loop: why TypeScript and React are a superheroic dynamic duo",
+  "author": "Ryan Atkinson <ryanatkn@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanatkn/react-typescript-closing-the-loop.git"
+  },
+  "homepage": "https://github.com/ryanatkn/react-typescript-closing-the-loop",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "typescript": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "awesome-typescript-loader": "^3.1.2",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  },
+  "keywords": [
+    "typescript",
+    "react"
+  ]
+}
