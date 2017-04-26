@@ -29,7 +29,9 @@ then reacting to user input events on the views,
 which triggers business logic to update the state,
 then re-drawing the views with the new state, and continuing on in a loop.
 There's more to it, but this is the basic loop -
+```
 `state` -> `view` -> `user input` -> `business logic` -> `new state` -> `new view`, and so on.
+```
 
 ## What is a "closed" loop?
 At each step of the loop, we process data sent by the previous step.
@@ -39,8 +41,8 @@ of each step at *compile* time if things are well-typed, where everything has a 
 For the purposes of this post, I'm going to refer to a well-typed loop as *closed* -
 meaning *all* type errors will be caught by the compiler *throughout the loop*.
 
-> My apologies if the term "closed loop" irks you or makes no sense
-> - please submit an issue with suggestions!
+> My apologies if the term "closed loop" irks you or makes no sense -
+> please submit an issue with suggestions!
 
 The benefits of having a well-typed *closed loop*
 go far beyond disambiguating strings and numbers.
@@ -57,8 +59,8 @@ In a closed loop, the compiler has your back - all of it.
 > For example they support a typed version of JSX called TSX,
 > and you'll find many references to React in the TypeScript issues.
 > Though TypeScript + React is imperfect - there are small type gaps here and there,
-> and some things require type annotations that should be unnecessary
-> - the point of this post still stands.
+> and some things require type annotations that should be unnecessary -
+> the point of this post still stands.
 > Don't let perfect be the enemy of good, let alone great!
 > Be sure to check out TypeScript's optional compiler flags that increase type strictness,
 > like "noImplicitAny", "strictNullChecks".
@@ -109,18 +111,24 @@ they still miss key aspects of type safety and the vast majority
 of the code in the community has zero type safety in templates.
 Let's look at some popular frameworks and their loops with TypeScript.
 
-> ---> is a well-typed closed step and -/-> is a step
+> `--->` is a well-typed closed step and `-/->` is a step
 > that breaks the loop by losing type information
 
 Angular 2+, Vue, and Ember have two broken steps in the loop.
 To see what this actually means in practice, skip down to the last of the images below.
-        `state` -/-> `view` -/-> `user input` ---> `business logic` ---> `state`
+```
+  `state` -/-> `view` -/-> `user input` ---> `business logic` ---> `state`
+```
 
 Cycle gets closer, but it prefers CSS selector strings for attaching user input handlers to the view:
-        `state` ---> `view` -/-> `user input` ---> `business logic` ---> `state`
+```
+  `state` ---> `view` -/-> `user input` ---> `business logic` ---> `state`
+```
 
 React is a closed loop - no broken steps!
-        `state` ---> `view` ---> `user input` ---> `business logic` ---> `state`
+```
+  `state` ---> `view` ---> `user input` ---> `business logic` ---> `state`
+```
 
 Elm, PureScript, and some other languages with advanced type systems
 are able to get closer to a 100% closed loop today than TypeScript,
