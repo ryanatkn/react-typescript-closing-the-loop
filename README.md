@@ -35,10 +35,10 @@ There's more to it, but this is the basic loop:
 
 ## What is a "closed" loop?
 At each step of the loop, we process data sent by the previous step.
-In JavaScript, the correctness of passing and processing data can only be determined at runtime.
-In contrast, TypeScript and other typed languages are able to ensure the correctness
-of each step at *compile* time if things are fully typechecked,
-where everything has a known complete type.
+In JavaScript, the correctness of passing and processing data can only be tested at runtime,
+and static analysis has tight limits.
+In contrast, TypeScript and other typed languages are able to check more of the validity
+of each step at *compile* time because of the additional information provided by types.
 For the purposes of this article, I'm going to refer to a fully typechecked loop as *closed* -
 meaning *all* type errors will be caught by the compiler *throughout the loop*.
 
@@ -87,7 +87,7 @@ meaning you cannot rely on the automated information and transformations
 the computer provides you with.
 Say you ask the computer to rename a variable -
 if your views do not close the loop, you'll have to search all of your views and
-update the variable name without the computer's guarantee of correctness.
+update the variable name without the computer's assurances of validity.
 This is tedious and error prone - consider renaming a property named `"text"` in a huge app!
 If there can always be leaks and misses, you have to check everything manually,
 and fearless refactoring flies out the window.
