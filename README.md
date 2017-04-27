@@ -186,7 +186,8 @@ Though imperfect, the TypeScript and React duo
 provide a wonderful development experience, relative to most alternatives.
 My hope is that more languages, libraries, and frameworks take seriously the idea that
 we can and should be able to *close the loop*, because a fully typechecked app is a happy app.
-We all need heroes - today, for front end web development, React and TypeScript are two of mine.
+We all need heroes - not to worship, but for their leadership -
+and today, for front end web development, React and TypeScript are two of mine.
 
 
 ## Additional notes
