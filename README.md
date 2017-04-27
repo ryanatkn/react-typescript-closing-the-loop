@@ -6,6 +6,10 @@ This article and attached code demonstrate why I prefer
 React's JavaScript templating combined with TypeScript
 over the approaches taken by other popular view libraries.
 
+> tldr: React builds DOM and listens to it in a way that can be typechecked.
+> This simple fact provides substantial benefits over alternatives like Angular.
+> Read on for more discussion and visual demonstrations.
+
 What follows is a whole lot of words that explain
 what "the loop" is and why we want it to be "closed",
 then some demo code visuals illustrating the point.
