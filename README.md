@@ -3,8 +3,10 @@
 ### **important update!!!**
 > Literally today TypeScript 2.3 was
 > [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
-> and it invalidates the comparison to Angular via its new language server plugin API,
-> [possibly completely](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template).
+> and it at least partially invalidates the comparison to Angular, Vue,
+> and others via its new language server plugin API.
+> I don't know if string templates can ever be as fully typechecked as React can be,
+> but maybe they can - in any case, this is super cool!
 > I'm going to push a big update to this article with some snappy Angular animations,
 > and maybe more - GraphQL? Yes please.
 
