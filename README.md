@@ -1,6 +1,6 @@
 # Closing the loop: why TypeScript and React are a superheroic dynamic duo
 
-### **important update!!!**
+### **important update!!! this post is already outdated**
 > Literally today TypeScript 2.3 was
 > [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
 > and it at least partially invalidates the comparison to Angular, Vue,
