@@ -1,5 +1,12 @@
 # Closing the loop: why TypeScript and React are a superheroic dynamic duo
 
+**important** Literally today TypeScript 2.3 was
+[announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
+and it invalidates the comparison to Angular via its new language server plugin API,
+[possibly completely](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template).
+I'm going to push a big update to this article with some snappy Angular animations,
+and maybe more - GraphQL? Yes please.
+
 React and TypeScript are well-hyped fixtures of the 2017 webscape,
 but not much attention has been given to how wonderfully they complement each other.
 This article and attached code demonstrate why I prefer
@@ -92,7 +99,7 @@ the computer provides you with.
 Say you ask the computer to rename a variable -
 if your views do not close the loop, you'll have to search all of your views and
 update the variable name without the computer's assurances of validity.
-This is tedious and error prone - consider renaming a property named `"text"` in a huge app!
+This is tedious and error prone - consider renaming a property named `text` in a huge app!
 If there can always be leaks and misses, you have to check everything manually,
 and fearless refactoring flies out the window.
 A closed loop enables higher productivity for reading code, writing code,
