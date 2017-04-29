@@ -19,7 +19,7 @@ building my views with TypeScript in React
 over the templating strategies used by other popular view libraries.
 
 > tldr: React builds DOM and listens to it in a way that can be typechecked.
-> This simple fact provides substantial benefits over alternatives like Angular.
+> This simple fact provides substantial benefits over alternatives that use string templates.
 > Read on for more discussion and visual demonstrations.
 > This is the joy of tool-assisted typesafe frontend web development:
 >
