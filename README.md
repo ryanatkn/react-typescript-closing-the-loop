@@ -1,12 +1,14 @@
 # Closing the loop: why TypeScript and React are a superheroic dynamic duo
 
-### ***important update!!!* this post is already outdated and failed to anticipate parsing string templates and integrating that with the TypeScript compiler...yep, that's wow!**
-> Literally today TypeScript 2.3 was
-> [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
-> and it at least partially invalidates the comparison to Angular, Vue,
-> and others via its new language server plugin API.
+### ***!important update!!!* this post is *already outdated* - that's JavaScript fatigue for ya! loving it.**
+> I failed to anticipate that Angular and other frameworks could theoretically parse
+> their string templates and integrate with the TypeScript compiler,
+> and get some (or all?) of the benefits that React enjoys.
+> It was just [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)!
+> This at least partially invalidates this article's comparison of React to Angular, Vue,
+> and others via its new [language server plugin API](https://github.com/Quramy/ts-graphql-plugin).
 > I don't know if string templates can ever be as fully typechecked as React can be,
-> but maybe they can - in any case, this is super cool!
+> but maybe they can (please open an issue if you know) - in any case, this is super cool!
 > I'm going to push a big update to this article with some snappy Angular animations,
 > and maybe more - GraphQL? Yes please.
 
@@ -19,6 +21,7 @@ over the approaches taken by other popular view libraries.
 > tldr: React builds DOM and listens to it in a way that can be typechecked.
 > This simple fact provides substantial benefits over alternatives like Angular.
 > Read on for more discussion and visual demonstrations.
+> `great web libraries/frameworks -> great editor integration -> much productivity`
 
 What follows is a whole lot of words that explain
 what "the loop" is and why we want it to be "closed",
@@ -126,9 +129,9 @@ So a closed loop sounds great - how do we get one?
 It turns out that the *view* is where most loops get broken
 in the single page web apps of 2017.
 This is where React differs from most other popular view libraries and frameworks.
-If you can build your templates with a typed flavor of JavaScript, like TypeScript,
+If you can build your views with a typed flavor of JavaScript, like TypeScript,
 you can close that part of the loop! That's what React offers.
-Most view libraries do not allow building templates with JavaScript,
+Most view libraries do not allow building views with JavaScript,
 and even though some libraries like Vue offer this
 as an alternative to string templates,
 they still miss critical aspects of type safety, and the vast majority
@@ -255,7 +258,7 @@ and they're all open source!
 
 My path to React started with jQuery and then Backbone,
 where my team used a beautifully terrible templating system
-that used JavaScript function calls to build templates as strings.
+that used JavaScript function calls to build views as strings.
 (it looked alright in CoffeeScript, but never again)
 When React was announced, and after I was desensitized enough
 to get over my initial revulsion of JSX,
