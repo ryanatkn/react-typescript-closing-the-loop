@@ -8,9 +8,10 @@ are superheroes of frontend web development
 
 
 ### ***Important update!!!* this post is *already outdated* and full of FUD and falsehoods
-> I unknowingly spread FUD in this article comparing the capabilities
+> I unknowingly spread lies and FUD in this article comparing the capabilities
 > of React to Angular, Vue, Ember, and other string-based templating frameworks.
 > I'm sorry. Seriously. Posted to reddit and everything.
+> **Nothing described here is specific to React.**
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with a typed language like TypeScript,
 > and get all of the tooling benefits that React enjoys.
