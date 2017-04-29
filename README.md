@@ -115,7 +115,7 @@ If there can always be leaks and misses, you have to check everything manually,
 and fearless refactoring flies out the window.
 A closed loop enables higher productivity for reading code, writing code,
 and improving and maintaining code quality over time,
-which leads to happier developers, happier users, and better business outcomes.
+which leads to happier developers, happier users, and better software.
 
 > I'll speculate that many developers think TypeScript adds rigidity to your code.
 > I think it's the opposite - JavaScript code is more rigid, and TypeScript more fluid,
