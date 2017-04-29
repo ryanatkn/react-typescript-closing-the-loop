@@ -1,7 +1,13 @@
 # Closing the loop: why TypeScript and React are a superheroic dynamic duo
 
 or, the joy of tool-assisted typesafe frontend web development
+
+or, types and the
+[language service](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API)
+are superheroes of frontend web development
+
 or, the majesty of the language service
+
 
 ### ***Important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
 > I unknowingly spread FUD in this article comparing the capabilities
