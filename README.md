@@ -23,6 +23,8 @@ or, the majesty of the [language service](https://github.com/Microsoft/vscode-ht
 > Here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A).
 > I'm going to post a followup to this article with some snappy Angular animations,
 > and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
+> Below is a somewhat edited version of the original -
+> ~~strikethrough text~~ is used to preserve mistakes and is followed by a correction.
 
 React and TypeScript are well-hyped fixtures of the 2017 webscape,
 but not much attention has been given to how wonderfully they complement each other.
@@ -184,7 +186,8 @@ Enough telling - seeing is believing!
 
 ## Developing with a closed loop
 The following images demonstrate things that are
-only possible with a partially or fully closed loop.
+only possible with a good type system and/or a partially/fully closed loop,
+and good editor integration.
 To try these things yourself, clone this repo,
 fire up your favorite editor with TypeScript integration
 (VSCode is pictured, Atom is great too),
