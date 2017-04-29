@@ -3,12 +3,15 @@
 or, the joy of tool-assisted typesafe frontend web development
 
 ### ***!important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
+> I unknowingly spread FUD in this article comparing the capabilities
+> of React to Angular, Vue, Ember, and string-based templating frameworks.
+> I'm sorry. Seriously.
 > I failed to anticipate that Angular and other frameworks could theoretically parse
-> their string templates and integrate with the TypeScript language service,
-> and get some (or all?) of the benefits that React enjoys.
-> It was just [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)!
-> This at least partially invalidates this article's comparison of React to Angular, Vue,
-> and others via its new
+> their string templates and integrate with a typed language like TypeScript,
+> and get some (or all?) of the tooling benefits that React enjoys.
+> This very thing was [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
+> the day after I originally published, though there's weeks-old public code around this stuff that I hadn't seen.
+> This at least partially invalidates this article's comparison of React to Angular, Vue, and others via its new
 > [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
 > I don't know if string templates can ever be as fully typechecked as React can be,
 > but maybe they can (please open an issue if you know) - in any case, this is super cool!
