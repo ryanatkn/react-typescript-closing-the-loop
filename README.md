@@ -157,10 +157,9 @@ Let's look at some popular frameworks and their loops with TypeScript.
 
 Angular 2+, Vue, and Ember have two broken steps in the loop.
 To see what this actually means in practice, ~~skip down to the last of the images below~~
-
-> Here's the [Vue](https://github.com/octref/vetur/) and
-> [Angular](https://github.com/angular/vscode-ng-language-service)
-> VSCode plugins.
+check out the [Vue](https://github.com/octref/vetur/) and
+[Angular](https://github.com/angular/vscode-ng-language-service)
+VSCode plugins.
 
 ```
   state -/-> view -/-> user input ---> business logic ---> state
