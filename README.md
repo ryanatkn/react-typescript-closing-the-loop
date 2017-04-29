@@ -26,7 +26,7 @@ over the templating strategies used by other popular view libraries.
 > Read on for more discussion and visual demonstrations.
 > This is the joy of tool-assisted typesafe frontend web development:
 >
-> `great web libraries/frameworks/typed languages -> great editor integration -> much productivity`
+> `great web libraries/frameworks/typed languages -> great editor integration -> much productivity/happy`
 
 What follows is a whole lot of words that explain
 what "the loop" is and why we want it to be "closed",
