@@ -9,12 +9,11 @@ or, the joy of tool-assisted typesafe frontend web development
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with a typed language like TypeScript,
 > and get some (or all?) of the tooling benefits that React enjoys.
-> This very thing was [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
+> This very thing was [released](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
 > the day after I originally published, though there's weeks-old public code around this stuff that I hadn't seen.
-> This at least partially invalidates this article's comparison of React to Angular, Vue, and others via its new
+> This invalidates this article's comparison of React to Angular, Vue, and others via its new
 > [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
-> I don't know if string templates can ever be as fully typechecked as React can be,
-> but maybe they can (please open an issue if you know) - in any case, this is super cool!
+> It also announced well before - here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A).
 > I'm going to post a followup to this article with some snappy Angular animations,
 > and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
 
@@ -117,7 +116,7 @@ This is tedious and error prone - consider renaming a property named `text` in a
 If there can always be leaks and misses, you have to check everything manually,
 and fearless refactoring flies out the window.
 A closed loop enables higher productivity for reading code, writing code,
-and improving and maintaining code quality over time,
+and maintaining and improving code quality over time,
 which leads to happier developers, happier users, and better software.
 
 > I'll speculate that many developers think TypeScript adds rigidity to your code.
