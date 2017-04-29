@@ -2,11 +2,9 @@
 
 or, the joy of tool-assisted typesafe frontend web development
 
-or, types and the
+or, why types and the
 [language service](https://github.com/Microsoft/vscode-html-languageservice)
 are superheroes of frontend web development
-
-or, the majesty of the [language service](https://github.com/Microsoft/vscode-html-languageservice)
 
 
 ### ***Important update!!!* this post is *already outdated* and full of FUD and falsehoods
