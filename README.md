@@ -20,10 +20,18 @@ are superheroes of frontend web development
 > This invalidates this article's comparison of React to Angular, Vue, and others via its new
 > [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
 > Here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A).
-> I'm going to post a followup to this article with some snappy Angular animations,
+> I'm going to post a [followup](https://github.com/ryanatkn/language-service-in-motion)
+> to this article with some snappy Angular animations,
 > and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
 > Below is a somewhat edited version of the original -
 > ~~strikethrough text~~ is used to preserve mistakes and is followed by a correction.
+
+> I may just keep this repo as is, as a monument to my ignorance.
+> [Here's the followup](https://github.com/ryanatkn/language-service-in-motion) -
+> a new repo that encourages everyone to submit
+> animations that demonstrate the
+> [language service](https://github.com/Microsoft/TypeScript/wiki/Architectural-Overview)
+> in motion for any library/framework/language/editor.
 
 React and TypeScript are well-hyped fixtures of the 2017 webscape,
 but not much attention has been given to how wonderfully they complement each other.
