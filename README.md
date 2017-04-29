@@ -10,10 +10,10 @@ or, the joy of tool-assisted typesafe frontend web development
 > their string templates and integrate with a typed language like TypeScript,
 > and get all of the tooling benefits that React enjoys.
 > This very thing was [released](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
-> the day after I originally published, though there's weeks-old public code around this stuff that I hadn't seen.
+> the day after I originally published.
 > This invalidates this article's comparison of React to Angular, Vue, and others via its new
 > [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
-> It also announced well before - here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A).
+> Here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A).
 > I'm going to post a followup to this article with some snappy Angular animations,
 > and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
 
