@@ -2,9 +2,9 @@
 
 or, the joy of tool-assisted typesafe frontend web development
 
-### ***!important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
+### ***Important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
 > I unknowingly spread FUD in this article comparing the capabilities
-> of React to Angular, Vue, Ember, and string-based templating frameworks.
+> of React to Angular, Vue, Ember, and other string-based templating frameworks.
 > I'm sorry. Seriously.
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with a typed language like TypeScript,
