@@ -2,15 +2,16 @@
 
 ### ***!important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
 > I failed to anticipate that Angular and other frameworks could theoretically parse
-> their string templates and integrate with the TypeScript compiler,
+> their string templates and integrate with the TypeScript language service,
 > and get some (or all?) of the benefits that React enjoys.
 > It was just [announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)!
 > This at least partially invalidates this article's comparison of React to Angular, Vue,
-> and others via its new [language server plugin API](https://github.com/Quramy/ts-graphql-plugin).
+> and others via its new
+> [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
 > I don't know if string templates can ever be as fully typechecked as React can be,
 > but maybe they can (please open an issue if you know) - in any case, this is super cool!
 > I'm going to push a big update to this article with some snappy Angular animations,
-> and maybe more - GraphQL? Yes please.
+> and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
 
 React and TypeScript are well-hyped fixtures of the 2017 webscape,
 but not much attention has been given to how wonderfully they complement each other.
