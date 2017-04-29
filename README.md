@@ -3,10 +3,10 @@
 or, the joy of tool-assisted typesafe frontend web development
 
 or, types and the
-[language service](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API)
+[language service](https://github.com/Microsoft/vscode-html-languageservice)
 are superheroes of frontend web development
 
-or, the majesty of the language service
+or, the majesty of the [language service](https://github.com/Microsoft/vscode-html-languageservice)
 
 
 ### ***Important update!!!* this post is *already outdated* and full of FUD and falsehoods
@@ -155,7 +155,7 @@ Let's look at some popular frameworks and their loops with TypeScript.
 > `--->` is a fully typechecked closed step and `-/->` is a step
 > that breaks the loop by losing type information
 
-Angular 2+, Vue, and Ember have two broken steps in the loop.
+Angular 2+, Vue, and Ember have ~~two~~ actually zero broken steps in the loop.
 To see what this actually means in practice, ~~skip down to the last of the images below~~
 check out the [Vue](https://github.com/octref/vetur/) and
 [Angular](https://github.com/angular/vscode-ng-language-service)
