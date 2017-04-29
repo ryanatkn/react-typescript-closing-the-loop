@@ -12,7 +12,7 @@ or, the majesty of the language service
 ### ***Important update!!!* this post is *already outdated* and full of FUD and falsehoods
 > I unknowingly spread FUD in this article comparing the capabilities
 > of React to Angular, Vue, Ember, and other string-based templating frameworks.
-> I'm sorry. Seriously.
+> I'm sorry. Seriously. Posted to reddit and everything.
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with a typed language like TypeScript,
 > and get all of the tooling benefits that React enjoys.
@@ -156,7 +156,12 @@ Let's look at some popular frameworks and their loops with TypeScript.
 > that breaks the loop by losing type information
 
 Angular 2+, Vue, and Ember have two broken steps in the loop.
-To see what this actually means in practice, skip down to the last of the images below.
+To see what this actually means in practice, ~~skip down to the last of the images below~~
+
+> Here's the [Vue](https://github.com/octref/vetur/) and
+> [Angular](https://github.com/angular/vscode-ng-language-service)
+> VSCode plugins.
+
 ```
   state -/-> view -/-> user input ---> business logic ---> state
 ```
@@ -183,7 +188,7 @@ The following images demonstrate things that are
 only possible with a partially or fully closed loop.
 To try these things yourself, clone this repo,
 fire up your favorite editor with TypeScript integration
-(vscode is pictured, Atom is great too),
+(VSCode is pictured, Atom is great too),
 and start moving fast without breaking things!
 
 ### Comprehensive error checking
