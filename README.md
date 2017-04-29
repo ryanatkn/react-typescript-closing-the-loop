@@ -21,8 +21,9 @@ over the templating strategies used by other popular view libraries.
 > tldr: React builds DOM and listens to it in a way that can be typechecked.
 > This simple fact provides substantial benefits over alternatives like Angular.
 > Read on for more discussion and visual demonstrations.
+> This is the joy of tool-assisted typesafe frontend web development:
 >
-> `great web libraries/frameworks -> great editor integration -> much productivity`
+> `great web libraries/frameworks -> types -> great editor integration -> much productivity`
 
 What follows is a whole lot of words that explain
 what "the loop" is and why we want it to be "closed",
