@@ -8,7 +8,7 @@ or, the joy of tool-assisted typesafe frontend web development
 > I'm sorry. Seriously.
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with a typed language like TypeScript,
-> and get some (or all?) of the tooling benefits that React enjoys.
+> and get all of the tooling benefits that React enjoys.
 > This very thing was [released](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
 > the day after I originally published, though there's weeks-old public code around this stuff that I hadn't seen.
 > This invalidates this article's comparison of React to Angular, Vue, and others via its new
@@ -197,11 +197,12 @@ and start moving fast without breaking things!
 ### Find all references
 ![Find all references](/img/find-all-references.gif?raw=true)
 
-### Angular's broken loop
-In Angular, notice how the computer
+### Angular's formerly broken loop
+~~In Angular, notice how the computer
 doesn't help with simple typos on the component or template,
 despite having first-class integration with TypeScript.
-None of the above demos work with Angular templates.
+None of the above demos work with Angular templates.~~
+Stay tuned.
 ![Angular 2](/img/angular.gif?raw=true)
 
 
