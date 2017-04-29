@@ -1,5 +1,7 @@
 # Closing the loop: why TypeScript and React are a superheroic dynamic duo
 
+or, the joy of tool-assisted typesafe frontend web development
+
 ### ***!important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with the TypeScript language service,
@@ -10,7 +12,7 @@
 > [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
 > I don't know if string templates can ever be as fully typechecked as React can be,
 > but maybe they can (please open an issue if you know) - in any case, this is super cool!
-> I'm going to push a big update to this article with some snappy Angular animations,
+> I'm going to post a followup to this article with some snappy Angular animations,
 > and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
 
 React and TypeScript are well-hyped fixtures of the 2017 webscape,
