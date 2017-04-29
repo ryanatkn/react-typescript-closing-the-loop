@@ -9,7 +9,7 @@ are superheroes of frontend web development
 or, the majesty of the language service
 
 
-### ***Important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
+### ***Important update!!!* this post is *already outdated* and full of FUD and falsehoods
 > I unknowingly spread FUD in this article comparing the capabilities
 > of React to Angular, Vue, Ember, and other string-based templating frameworks.
 > I'm sorry. Seriously.
