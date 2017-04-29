@@ -1,6 +1,6 @@
 # Closing the loop: why TypeScript and React are a superheroic dynamic duo
 
-### ***!important update!!!* this post is *already outdated* - that's JavaScript fatigue for ya! :squirrel:**
+### ***!important update!!!* this post is *already outdated* and full of FUD - that's JavaScript fatigue for ya! :squirrel:**
 > I failed to anticipate that Angular and other frameworks could theoretically parse
 > their string templates and integrate with the TypeScript compiler,
 > and get some (or all?) of the benefits that React enjoys.
