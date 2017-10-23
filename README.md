@@ -1,50 +1,30 @@
-# Closing the loop: why TypeScript and React are a superheroic dynamic duo
+# Closing the loop
+### types + language service = awesome frontend webdev
 
-or, the joy of tool-assisted typesafe frontend web development
-
-or, why types and the
-[language service](https://github.com/Microsoft/vscode-html-languageservice)
-are superheroes of frontend web development
-
-
-### ***Important update!!!* this post is *already outdated* and full of FUD and falsehoods
-> I unknowingly spread lies and FUD in this article comparing the capabilities
-> of React to Angular, Vue, Ember, and other string-based templating frameworks.
-> I'm sorry. Seriously. Posted to reddit and everything.
-> **Nothing described here is specific to React.**
-> I failed to anticipate that Angular and other frameworks could theoretically parse
-> their string templates and integrate with a typed language like TypeScript,
-> and get all of the tooling benefits that React enjoys.
-> This very thing was [released](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
-> the day after I originally published.
-> This invalidates this article's comparison of React to Angular, Vue, and others via its new
-> [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API).
-> Here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A).
-> I'm going to post a [followup](https://github.com/ryanatkn/language-service-in-motion)
-> to this article with some snappy Angular animations,
-> and maybe more - [GraphQL](https://github.com/Quramy/ts-graphql-plugin)? Yes please.
-> Below is a somewhat edited version of the original -
-> ~~strikethrough text~~ is used to preserve mistakes and is followed by a correction.
-
-> I may just keep this repo as is, as a monument to my ignorance.
-> [Here's the followup](https://github.com/ryanatkn/language-service-in-motion) -
-> a new repo that encourages everyone to submit
-> animations that demonstrate the
-> [language service](https://github.com/Microsoft/TypeScript/wiki/Architectural-Overview)
-> in motion for any library/framework/language/editor.
+> In the original version of this article, I mistakenly praised the capabilities
+> of React compared to Angular, Vue.js, Ember, and other non-JS-based templating frameworks.
+> As it turns out, tools don't care whether you put
+> your code in your templates or the other way around.
+> The day after I published this,
+> [TypeScript 2.3 announced](https://blogs.msdn.microsoft.com/typescript/2017/04/27/announcing-typescript-2-3/)
+> the stable release of the 
+> [language service plugin API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API),
+> which allows other frameworks to get similar TypeScript tooling benefits that React enjoys.
+> I was wrong to say React was unique in this way,
+> and almost perfectly mistimed my post, and I'm sorry if I misled you.
+> Here's a [great talk](https://www.youtube.com/watch?v=ez3R0Gi4z5A) explaining
+> how Angular leverages types and the language service.
+> This article has been updated to clarify that React
+> enjoys no special ability to take advantage of type information.
 
 React and TypeScript are well-hyped fixtures of the 2017 webscape,
 but not much attention has been given to how wonderfully they complement each other.
-This article and attached code demonstrate why I prefer
-building my views with TypeScript in React
-over the templating strategies used by other popular view libraries.
-
-> tldr: React builds DOM and listens to it in a way that can be typechecked.
-> This simple fact provides substantial benefits over alternatives that use string templates.
-> Read on for more discussion and visual demonstrations.
-> This is the joy of tool-assisted typesafe frontend web development:
->
-> `great web libraries/frameworks/typed languages -> great editor integration -> much productivity/happy`
+This article and attached code demonstrate what's possible
+in your editor when your code is fully typechecked on the frontend.
+React views are written in either JavaScript or JSX, which is also just JavaScript,
+so React can take advantage of types without special tooling,
+but the TypeScript language service allows other frameworks
+like Angular and Vue.js to enjoy similar benefits.
 
 What follows is a whole lot of words that explain
 what "the loop" is and why we want it to be "closed",
@@ -54,9 +34,9 @@ Feel free to skip down to the pretty pictures.
 ## What is "the loop?"
 React has promoted a now well-known concept called *unidirectional data flow*,
 which has been adopted by Angular 2, Ember 2, the React community via Flux and Redux,
-the Vue community via Vuex, and many others.
+the Vue.js community via Vuex, and many others.
 This contrasts with the *bidirectional data flow* or *two-way data binding*
-used in Angular 1, Ember 1, Vue 1, and Knockout, among others.
+used in Angular 1, Ember 1, Vue.js 1, and Knockout, among others.
 
 There are a lot of
 [great resources](https://staltz.com/unidirectional-user-interface-architectures.html)
@@ -75,17 +55,20 @@ There's more to it, but this is the basic loop:
 
 ## What is a "closed" loop?
 At each step of the loop, we process data sent by the previous step.
-In JavaScript, the correctness of passing and processing data can only be tested at runtime,
-and static analysis has tight limits.
+In JavaScript, code that passes and processes data can only be tested at runtime,
+and static analysis has tight and fuzzy limits.
 In contrast, TypeScript and other typed languages are able to check more of the validity
 of each step at *compile* time because of the additional information provided by types.
 For the purposes of this article, I'm going to refer to a fully typechecked loop as *closed* -
-meaning *all* type errors will be caught by the compiler *throughout the loop*.
+meaning *all* type errors will be caught by the compiler *throughout the loop*,
+for some handwavy definition of "type error".
 
 > My apologies if the term "closed loop" irks you or makes no sense -
 > please submit an issue with suggestions!
 > I felt that existing terminology doesn't capture the importance of this concept
 > in the context of single page web apps.
+> Also a caveat: nothing here should be considered valid computer science.
+> Some words with domain-specific meaning may get muddled ahead.
 
 The benefits of having a fully typechecked *closed loop*
 go far beyond disambiguating strings and numbers.
@@ -105,6 +88,8 @@ In a closed loop, the compiler has your back - all of it.
 > and some things require type annotations that should be unnecessary -
 > the point of this article still stands.
 > Don't let perfect be the enemy of good, let alone great!
+> I'm sure future tooling will make all of this appear quite barbaric,
+> but it's a major improvement over webdev circa 2012.
 > Be sure to check out TypeScript's optional compiler flags that increase type strictness,
 > like `noImplicitAny` and `strictNullChecks`.
 > The experienced TypeScript developer will likely find and prefer
@@ -117,7 +102,9 @@ Error checking is only one part of the story.
 Types also provide the computer with a significantly improved understanding of your code.
 This empowers the computer to do far more than check for errors -
 from code navigation, to inspecting where and how which symbols get used,
-to making automated transformations and refactorings, there's so much the computer can do for us.
+to making automated transformations and refactorings,
+there's so much the computer can do for us,
+which for me translates directly into productivity and happiness.
 
 Sounds pretty good right?
 The caveat is that the loop needs to be *closed* to provide a great experience.
@@ -131,6 +118,7 @@ update the variable name without the computer's assurances of validity.
 This is tedious and error prone - consider renaming a property named `text` in a huge app!
 If there can always be leaks and misses, you have to check everything manually,
 and fearless refactoring flies out the window.
+Worse still, your ability to understand the codebase shrinks as your app and team grow.
 A closed loop enables higher productivity for reading code, writing code,
 and maintaining and improving code quality over time,
 which leads to happier developers, happier users, and better software.
@@ -151,35 +139,51 @@ which leads to happier developers, happier users, and better software.
 So a closed loop sounds great - how do we get one?
 It turns out that the *view* is where most loops get broken
 in the single page web apps of 2017.
-This is where React differs from most other popular view libraries and frameworks.
+Err, well, that was true until Microsoft introduced the
+[language service](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API),
+enabling deep integration between a typed host language,
+the code inside templates, and your editor.
+
+Authoring views is where React differs from most other popular libraries and frameworks.
 If you can build your views with a typed flavor of JavaScript, like TypeScript,
-you can close that part of the loop! That's what React offers.
-Most view libraries do not allow building views with JavaScript,
-and even though some libraries like Vue offer this
-as an alternative to string templates,
-they still miss critical aspects of type safety, and the vast majority
-of the code in those communities has zero type safety in templates.
-Let's look at some popular frameworks and their loops with TypeScript.
+you can close the parts of the loop that connect with the views
+without a framework-specific language service,
+and this is where React has a head-start.
+Let's look at some popular frameworks that use
+string-based templating and their loops.
+
+The following diagrams **do not necessarily imply shortcomings**
+of the frameworks relative to React -
+they were originally falsely diminishing in the first version of this article,
+but I think they still show how helpful type information
+can be in single page apps.
 
 > `--->` is a fully typechecked closed step and `-/->` is a step
 > that breaks the loop by losing type information
 
-Angular 2+, Vue, and Ember have ~~two~~ actually zero broken steps in the loop.
-To see what this actually means in practice, ~~skip down to the last of the images below~~
-check out the [Vue](https://github.com/octref/vetur/) and
-[Angular](https://github.com/angular/vscode-ng-language-service)
-VSCode plugins.
-
+Without integrating with a language service,
+Angular 2+, Vue.js, and Ember have two broken steps in the loop.
+Here are the VSCode plugins for
+[Angular](https://github.com/angular/vscode-ng-language-service),
+[Vue.js](https://github.com/octref/vetur/),
+and [Ember](https://github.com/emberwatch/vscode-ember).
 ```
   state -/-> view -/-> user input ---> business logic ---> state
 ```
 
-Cycle gets closer, but it prefers CSS selector strings for attaching user input handlers to the view:
+Cycle.js gets closer, but it prefers CSS selector strings
+for attaching user input handlers to the view.
+I don't doubt that some clever tools could staticly
+analyze the relationships between views and input handlers,
+but they don't appear to exist today.
 ```
   state ---> view -/-> user input ---> business logic ---> state
 ```
 
-React is a closed loop - no broken steps!
+React is a closed loop by default, and doesn't need special tooling
+to integrate with the language service - there are no broken steps!
+This is a major reason why it has been adopted
+by users of typed languages like PureScript and Reason/OCaml.
 ```
   state ---> view ---> user input ---> business logic ---> state
 ```
@@ -187,13 +191,13 @@ React is a closed loop - no broken steps!
 Elm, PureScript, and some other languages with advanced type systems
 are able to get closer to a 100% fully typechecked closed loop than TypeScript can today,
 but they come with significant added friction to interoperating with the JavaScript ecosystem.
-This is not a tradeoff I'm willing to to make for most large applications.
+This is not a tradeoff I'm willing to to make for most large applications, but YMMV.
 
 Enough telling - seeing is believing!
 
 ## Developing with a closed loop
 The following images demonstrate things that are
-only possible with a good type system and/or a partially/fully closed loop,
+only possible with a partially or fully closed loop
 and good editor integration.
 To try these things yourself, clone this repo,
 fire up your favorite editor with TypeScript integration
@@ -218,28 +222,28 @@ and start moving fast without breaking things!
 ### Find all references
 ![Find all references](/img/find-all-references.gif?raw=true)
 
-### Angular's formerly broken loop
-~~In Angular, notice how the computer
-doesn't help with simple typos on the component or template,
-despite having first-class integration with TypeScript.
-None of the above demos work with Angular templates.~~
-Stay tuned.
+### Angular's language service integration
+It's not currently as complete as the React+TypeScript experience,
+but Angular has partial language service integration directly in HTML files,
+linking types between templates and components.
+I don't see any reason why it won't be as good as React's with more time.
 ![Angular 2](/img/angular.gif?raw=true)
 
 
 ## Conclusion
-Though imperfect, the TypeScript and React duo
-provide a wonderful development experience, relative to most alternatives.
+Types make working with frontend code a breeze,
+once you have good editor integration.
+Today's tools only scratch the surface of what's possible..
+
+Though imperfect, TypeScript provides a wonderful development experience, relative to most alternatives.
 My hope is that more languages, libraries, and frameworks take seriously the idea that
 we can and should be able to *close the loop*, because a fully typechecked app is a happy app.
-We all need heroes - not to worship, but for their leadership -
-and today, for front end web development, React and TypeScript are two of mine.
 
 
 ## Additional notes
-Can you do all of this with Flow, the Facebook equivalent of TypeScript?
+Can you do all of this with Flow, the Facebook competitor to TypeScript?
 Maybe! I don't know.
-The last time I evaluated Flow was over a year ago,
+The last time I evaluated Flow was years ago, *(edit: see update below)*
 and though it has some useful type features that TypeScript doesn't
 (like [$diff](https://flow.org/en/docs/types/utilities/)...yet?),
 the overall development experience, especially editor support and community type definitions,
@@ -250,6 +254,11 @@ to TypeScript, like `strictNullChecks`.
 If you're already transpiling your JavaScript, like with Babel,
 it's a modest additional cost to adopt a gradual typing technology like TypeScript or Flow.
 Hopefully I've convinced you to try a typed language that compiles to JS if you haven't already!
+**update:** I used Flow for a couple weeks in mid-2017, and I found
+the overall experience to be much less helpful and complete than TypeScript's.
+It has a theoretically more robust type system (see "soundness")
+but my experience tells me that TypeScript's leaning towards practicality,
+along with its maturity and popularity, make it a far better choice for me right now.
 
 This article is from a programmer's perspective -
 designers and others may have different priorities.
@@ -266,8 +275,8 @@ can help us accomplish our goals with the right tools.
 Are React and TypeScript flawless? Oh heck no! Are any big software projects?
 But in my opinion, relative to other solutions,
 they're good - and together, for building UIs, they're *great*.
-The future may hold something even better.
-I'm watching WebAssembly eagerly, and I think BuckleScript+Ocaml/Reason have a shot
+The future will surely bring more evolution and new tools.
+I'm watching WebAssembly eagerly, and I think BuckleScript+OCaml/Reason have a shot
 at winning a lot of developers from TypeScript/Flow in the next year or two.
 Elm and PureScript are also interesting alternatives.
 
