@@ -309,3 +309,5 @@ Thanks Facebook and the React team!
 Did I make an error, use cringey terminology,
 misrepresent your favorite library, or miss an important point?
 Please open an issue!
+
+[CC-BY-NC-SA-4.0](license)

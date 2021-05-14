@@ -1,9 +1,13 @@
 {
   "name": "react-typescript-closing-the-loop",
   "version": "2.0.0",
-  "description": "Closing the loop: why TypeScript and React are a superheroic dynamic duo",
-  "author": "Ryan Atkinson <ryanatkn@gmail.com>",
-  "license": "MIT",
+  "description": "types + language service = awesome frontend webdev",
+  "author": {
+    "name": "Ryan Atkinson",
+    "email": "mail@ryanatkn.com",
+    "url": "https://www.ryanatkn.com"
+  },
+  "license": "CC-BY-NC-SA-4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ryanatkn/react-typescript-closing-the-loop.git"
