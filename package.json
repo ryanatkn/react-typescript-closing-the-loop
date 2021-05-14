@@ -27,7 +27,7 @@
     "@types/react-dom": "^15.5.0",
     "awesome-typescript-loader": "^3.1.2",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.4"
+    "webpack-dev-server": "^3.1.11"
   },
   "keywords": [
     "typescript",
